@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 
 export const Container = styled.div`
-width: 1120px;
+  max-width: 1120px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -21,7 +21,7 @@ width: 1120px;
     max-width: 745px;
     margin-top: 2rem;
     font-size: 1.125rem;
-    line-height: 32px;
+    line-height: 2rem;
     color: var(--gray);
     text-align: center;
   }
