@@ -21,12 +21,13 @@ export const Container = styled.div`
     flex-direction: column;
     padding: 1.25rem 1.5rem;
     width: 350px;
-    height: 240px;
+    height: 250px;
     border: 1px solid #333333;
     box-sizing: border-box;
     background: var(--gray-400);
 
     h3 {
+      margin-top: 1.5rem;
       font-weight: 500;
       font-size: 1.125rem;
       line-height: 1.5rem;
