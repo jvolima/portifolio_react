@@ -1,6 +1,6 @@
 import smileSvg from "../../assets/smile.svg";
 import mailSvg from "../../assets/mail.svg";
-import instagramSvg from "../../assets/instagram.svg";
+import githubSvg from "../../assets/github.svg";
 import phoneSvg from "../../assets/phone.svg";
 
 import { Container } from "./styles";
@@ -24,9 +24,9 @@ export function Contatos() {
       </div>
       <div className="imgAndDescription">
         <div className="elipse">
-          <img src={instagramSvg} alt="Instagram" />
+          <img src={githubSvg} width="32px" height="32px" alt="Github" />
         </div>
-        <h3>Instagram</h3>
+        <h3>Github</h3>
         <p>jvolima</p>
       </div>
       <div className="imgAndDescription">

@@ -26,8 +26,15 @@ export const Container = styled.div`
     box-sizing: border-box;
     background: var(--gray-400);
 
+    a {
+      img {
+        width: 300px;
+        height: 150px;
+      }
+    }
+
     h3 {
-      margin-top: 1.5rem;
+      margin-top: 1rem;
       font-weight: 500;
       font-size: 1.125rem;
       line-height: 1.5rem;
@@ -35,6 +42,7 @@ export const Container = styled.div`
     }
 
     p {
+      margin-top: 0.2rem;
       font-size: 0.875rem;
       line-height: 1.125rem;  
       color: var(--gray);

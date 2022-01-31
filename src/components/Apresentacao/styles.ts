@@ -27,25 +27,27 @@ export const Container = styled.div`
       color: var(--gray);
     }
 
-    button {
-      margin-top: 2rem;
-      border: 1px solid var(--gray-200);
-      box-sizing: border-box;
-      background: var(--green-light);
-      color: (--dark);
-      width: 143px;
-      height: 42px;
-      margin-right: 1rem;
-      font-weight: 500;
-      font-size: 14px;
-      line-height: 18px;
+    a {
+      button {
+        margin-top: 2rem;
+        border: 1px solid var(--gray-200);
+        box-sizing: border-box;
+        background: var(--green-light);
+        color: (--dark);
+        width: 143px;
+        height: 42px;
+        margin-right: 1rem;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 18px;
 
-      &:hover {
-        filter: brightness(0.8);
-        transition: 0.2s;
+        &:hover {
+          filter: brightness(0.8);
+          transition: 0.2s;
+        }
       }
 
-      &:last-child {
+      .botao_preto {
         background: var(--dark);
         width: 157px;
         margin-right: 0;
