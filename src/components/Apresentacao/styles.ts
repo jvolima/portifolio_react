@@ -41,9 +41,8 @@ export const Container = styled.div`
       line-height: 18px;
 
       &:hover {
-        background: var(--gray-200);
-        color: var(--white);
-        transition: 0.4s;
+        filter: brightness(0.8);
+        transition: 0.2s;
       }
 
       &:last-child {
@@ -51,11 +50,6 @@ export const Container = styled.div`
         width: 157px;
         margin-right: 0;
         color: var(--white);
-
-        &:hover {
-          background: var(--white);
-          color: var(--dark)
-        }
       }
     }
   }

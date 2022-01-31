@@ -10,7 +10,7 @@ import { Container, Titulo } from "./styles";
 export function Projetos() {
   return (
     <>
-      <Titulo>Projetos</Titulo>
+      <Titulo id="projetos">Projetos</Titulo>
       <Container>
         <div className="projeto">
           <img src={dtmoneyPng} alt="Dtmoney" />

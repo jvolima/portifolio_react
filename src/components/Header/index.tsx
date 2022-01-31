@@ -5,10 +5,10 @@ export function Header() {
     <Container>
       <h1>Portifólio</h1>
       <ul>
-        <li><a href="">Sobre mim</a></li>
-        <li><a href="">Projetos</a></li>
-        <li><a href="">Serviços</a></li>
-        <li><a href="">Minhas skills</a></li>
+        <li><a href="./#sobreMim">Sobre mim</a></li>
+        <li><a href="./#projetos">Projetos</a></li>
+        <li><a href="./#servicos">Serviços</a></li>
+        <li><a href="./#minhasSkills">Minhas skills</a></li>
       </ul>
     </Container>
   )

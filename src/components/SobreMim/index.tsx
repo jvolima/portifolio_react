@@ -3,7 +3,7 @@ import { Container } from "./styles";
 
 export function SobreMim() {
   return (
-    <Container>
+    <Container id="sobreMim">
       <h2>Sobre mim</h2>
       <p>
         Meu nome é João Vitor Lima, tenho 17 anos e estudo programação há mais de 3 anos.
