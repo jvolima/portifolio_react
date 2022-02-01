@@ -8,6 +8,8 @@ export function Header() {
   function handleClickMenu() {
     setBars(!bars);
 
+    document.body.style.overflow = bars ? "initial" : "hidden"
+
     const menuSection = document.querySelector(".menu-section") as Element;
     menuSection.classList.toggle("on", !bars);
   }
@@ -23,7 +25,7 @@ export function Header() {
           <div className="four"></div>
         </div>
           {
-            bars == true ? <Menu></Menu> : null 
+            bars == true ? <Menu handleClickMenu={handleClickMenu}></Menu> : null 
           }
         <nav>
           <ul>

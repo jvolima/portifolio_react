@@ -86,9 +86,9 @@ export const Container = styled.header`
       height: 30px;
       margin-right: 20px;
       margin-top: 20px;
-      position: fixed;
-      right: 10px;
-      top: 15px;
+      position: absolute;
+      right: 12px;
+      top: 2px;
     }
 
     .menu-section.on {
