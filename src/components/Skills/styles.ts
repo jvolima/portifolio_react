@@ -9,12 +9,13 @@ export const Titulo = styled.h2`
 `
 
 export const Container = styled.div`
+  width: 90%;
   max-width: 1120px;
   margin: 0 auto;
   margin-top: 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 3rem;
 
   .skill {
     display: flex;

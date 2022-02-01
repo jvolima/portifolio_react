@@ -17,7 +17,7 @@ export function Apresentacao() {
         </a>
       </div>
       <div className="imagem">
-        <img src={imageSvg} alt="" />
+        <img src={imageSvg} alt="Imagem" />
       </div>
     </Container>
   )

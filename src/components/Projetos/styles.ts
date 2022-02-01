@@ -9,11 +9,12 @@ export const Titulo = styled.h2`
 `
 
 export const Container = styled.div`
+  width: 90%;
   max-width: 1120px;
   margin: 0 auto;
   margin-top: 2rem;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2.75rem;
 
   .projeto {

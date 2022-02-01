@@ -3,6 +3,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   margin: 0 auto;
+  width: 90%;
   max-width: 1120px;
   margin-top: 9rem;
   display: flex;
@@ -38,8 +39,8 @@ export const Container = styled.div`
         height: 42px;
         margin-right: 1rem;
         font-weight: 500;
-        font-size: 14px;
-        line-height: 18px;
+        font-size: 0.875rem;
+        line-height: 1.125rem;
 
         &:hover {
           filter: brightness(0.8);
@@ -62,4 +63,13 @@ export const Container = styled.div`
       height: 255px;
     }
   }
+
+  @media (max-width: 630px) {
+    flex-direction: column;
+    text-align: center;
+
+    .imagem {
+      order: -1
+    }
+  } 
 `
