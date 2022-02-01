@@ -11,8 +11,10 @@
 - Tipagem de componentes
 
 ## Versão desktop
-![Foto portfólio](./foto_portifolio.png)
+![Foto portfólio](./foto_portfolio.png)
 
 ## Versão mobile
-![Foto portfólio](./mobile.png)
+<div style="display: flex; justify-content: center; align-items: center">
+  <img src="./mobile.png">
+</div>
 
