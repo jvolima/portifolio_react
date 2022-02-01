@@ -14,7 +14,5 @@
 ![Foto portfólio](./foto_portfolio.png)
 
 ## Versão mobile
-<div style="display: flex; justify-content: center; align-items: center">
-  <img src="./mobile.png">
-</div>
+![Foto portfólio](./mobile.png)
 
