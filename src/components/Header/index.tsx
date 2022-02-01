@@ -16,7 +16,7 @@ export function Header() {
 
   return (
     <Container>
-      <h1>Portifólio</h1>
+      <h1>Portfólio</h1>
       <div className="menu-section">
         <div className="menu-toggle" onClick={handleClickMenu}>
           <div className="one"></div>
