@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Titulo = styled.h2`
-  margin-top: 8rem;
+  padding-top: 8rem;
   font-size: 2rem;
   line-height: 2.625rem;
   text-align: center;
@@ -11,6 +11,7 @@ export const Titulo = styled.h2`
 export const Container = styled.div`
   width: 90%;
   max-width: 1120px;
+  padding: 0 0.4rem;
   margin: 0 auto;
   margin-top: 2rem;
   display: grid;
@@ -21,8 +22,8 @@ export const Container = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 150px;
-    height: 150px;
+    width: 9.375rem;
+    height: 9.375rem;
     border: 1px solid var(--gray-200);
     box-sizing: border-box;
     background: var(--gray-400);

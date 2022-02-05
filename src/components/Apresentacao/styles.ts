@@ -47,16 +47,27 @@ export const Container = styled.div`
           transition: 0.2s;
         }
       }
+    }
 
-      .botao_preto {
-        background: var(--dark);
-        width: 157px;
-        margin-right: 0;
-        color: var(--white);
+    .botao_preto {
+      margin-top: 2rem;
+      border: 1px solid var(--gray-200);
+      box-sizing: border-box;
+      background: var(--dark);
+      width: 157px;
+      margin-right: 0;
+      color: var(--white);
+      height: 42px;
+      font-weight: 500;
+      font-size: 0.875rem;
+      line-height: 1.125rem;
+
+      &:hover {
+        filter: brightness(0.8);
+        transition: 0.2s;
       }
     }
   }
-
   .imagem {
     img {
       width: 300px;
@@ -72,4 +83,19 @@ export const Container = styled.div`
       order: -1
     }
   } 
+
+  @media (max-width: 370px) {
+    .botoes {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      a {
+        button {
+          margin-right: 0;
+        }
+      }
+    }
+  }
 `

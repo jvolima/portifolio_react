@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Titulo = styled.h2`
-  margin-top: 8rem;
+  padding-top: 8rem;
   font-size: 2rem;
   line-height: 2.625rem;
   text-align: center;
@@ -13,20 +13,21 @@ export const Container = styled.div`
   max-width: 1120px;
   margin: 0 auto;
   margin-top: 2rem;
+  padding: 0 0.4rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
   gap: 2.75rem;
 
   .servico {
-    width: 350px;
-    height: 240px;
+    width: 21.875rem;
+    height: 15rem;
     background: var(--gray-400);
     padding: 1.25rem 1.5rem;
 
     h3 {
       margin-top: 3.375rem;
-      width: 126px;
-      height: 84px;
+      width: 7.875rem;
+      height: 5.25rem;
       font-weight: 500;
       font-size: 2rem;
       line-height: 2.625rem;
@@ -41,7 +42,14 @@ export const Container = styled.div`
     justify-content: center;
     align-items: center;
     background: var(--green-light);
-    width: 350px;
+    width: 21.875rem;
     height: 5px
+  }
+
+  @media (max-width: 752px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column
   }
 `

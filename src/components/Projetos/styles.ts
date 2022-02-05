@@ -5,7 +5,7 @@ export const Titulo = styled.h2`
   color: var(--white);
   font-size: 2rem;
   line-height: 2.625rem;
-  margin-top: 8rem;
+  padding-top: 8rem;
 `
 
 export const Container = styled.div`
@@ -21,16 +21,16 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     padding: 1.25rem 1.5rem;
-    width: 350px;
-    height: 250px;
+    width: 21.875rem;
+    height: 15.625rem;
     border: 1px solid #333333;
     box-sizing: border-box;
     background: var(--gray-400);
 
     a {
       img {
-        width: 300px;
-        height: 150px;
+        width: 18.75rem;
+        height: 9.375rem;
       }
     }
 
@@ -48,5 +48,12 @@ export const Container = styled.div`
       line-height: 1.125rem;  
       color: var(--gray);
     }
+  }
+
+  @media (max-width: 680px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
   }
 `

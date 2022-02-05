@@ -9,9 +9,9 @@ export const Container = styled.div`
   align-items: center;
   flex-direction: column;
   margin: 0 auto;
-  margin-top: 10.625rem;
-
+  
   h2 {
+    margin-top: 10.625rem;
     color: var(--white);
     font-size: 2rem;
     line-height: 2.625rem;
