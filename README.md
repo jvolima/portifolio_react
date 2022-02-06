@@ -1,5 +1,7 @@
 # Portfólio responsivo feito em React
 
+## Acesse o deploy do portfólio: [!Portfólio](https://gracious-leavitt-4f38ad.netlify.app/)
+
 ## Tecnologias utilizadas
 - React
 - Typescript
@@ -9,6 +11,7 @@
 - Responsividade 
 - Compartilhamento de funções por propriedades
 - Tipagem de componentes
+- React-modal
 
 ## Versão desktop
 ![Foto portfólio](./foto_portfolio.png)
