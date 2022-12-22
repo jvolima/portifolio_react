@@ -1,9 +1,9 @@
-import goRestaurantPng from "../../assets/goRestaurant.png";
-import dtmoneyPng from "../../assets/dtmoney.png";
-import padariaPng from "../../assets/padaria.png";
-import watchmePng from "../../assets/watchme.png";
-import todoListPng from "../../assets/todoList.png";
-import rocketShoesPng from "../../assets/rocketShoes.png";
+import lunabus from "../../assets/lunabus.png";
+import devlandiaPng from "../../assets/devlandia.png";
+import designSystemPng from "../../assets/designsystem.png";
+import igniteShopPng from "../../assets/igniteshop.png";
+import rocketHelpPng from "../../assets/rockethelp.png";
+import jvboxPng from "../../assets/jvbox.png";
 
 import { Container, Titulo } from "./styles";
 
@@ -13,46 +13,46 @@ export function Projetos() {
       <Titulo id="projetos">Projetos</Titulo>
       <Container>
         <div className="projeto">
-          <a href="https://github.com/jvolima/dtmoney" target="_blank">
-            <img src={dtmoneyPng} alt="Dtmoney" />
+          <a href="https://github.com/jvolima/dev-landia" target="_blank">
+            <img src={devlandiaPng} alt="DevLândia" />
           </a>
-          <h3>dtmoney</h3>
-          <p>Tecnologias: React, TS e Styled-components</p>
+          <h3>DevLândia</h3>
+          <p>Tecnologias: React Native, TS, Node e TypeORM</p>
         </div>
         <div className="projeto">
-        <a href="https://github.com/jvolima/refatorando_classes" target="_blank">
-          <img src={goRestaurantPng} alt="Go Restaurant" />
+        <a href="https://lunabus.com.br" target="_blank">
+          <img src={lunabus} alt="Luna bus" />
         </a>
-          <h3>Go Restaurant</h3>
-          <p>Tecnologias: React, TS e Styled-components</p>
+          <h3>Luna bus</h3>
+          <p>Tecnologias: React, TS e Tailwind</p>
         </div>
         <div className="projeto">
-          <a href="https://github.com/jvolima/padaria_requinte" target="_blank">
-            <img src={padariaPng} alt="Padaria" />
+          <a href="https://github.com/jvolima/design-system" target="_blank">
+            <img src={designSystemPng} alt="Design System" />
           </a>
-          <h3>Panificadora Requinte</h3>
-          <p>Tecnologias: HTML, CSS e JS</p>
+          <h3>Design System Ignite Call</h3>
+          <p>Tecnologias: React, TS, Storybook, Turbo repo e Changesets</p>
         </div>
         <div className="projeto">
-          <a href="https://github.com/jvolima/filmes" target="_blank">
-            <img src={watchmePng} alt="WatchMe" />
+          <a href="https://github.com/jvolima/ignite-shop" target="_blank">
+            <img src={igniteShopPng} alt="Ignite Shop" />
           </a>
-          <h3>WatchMe</h3>
-          <p>Tecnologias: React, TS e Styled-components</p>
+          <h3>Ignite Shop</h3>
+          <p>Tecnologias: Next, TS, Stitches e Stripe</p>
         </div>
         <div className="projeto">
-          <a href="https://github.com/jvolima/task-list" target="_blank">
-            <img src={todoListPng} alt="ToDo List" />
+          <a href="https://github.com/jvolima/rockethelp" target="_blank">
+            <img src={rocketHelpPng} alt="Rocket help" />
           </a> 
-          <h3>ToDo List</h3>
-          <p>Tecnologias: React, TS e Styled-components</p>
+          <h3>Rocket help</h3>
+          <p>Tecnologias: React Native, TS e Firebase</p>
         </div>
         <div className="projeto">
-          <a href="https://github.com/jvolima/carrinho_de_compras" target="_blank">
-            <img src={rocketShoesPng} alt="RocketShoes" />
+          <a href="https://github.com/jvolima/JvBox" target="_blank">
+            <img src={jvboxPng} alt="JvBox" />
           </a>         
-          <h3>RocketShoes</h3>
-          <p>Tecnologias: React, TS e Styled-components</p>
+          <h3>JvBox</h3>
+          <p>Tecnologias: Java, HTML, CSS, JavaScript e AJAX</p>
         </div>
       </Container>
     </>

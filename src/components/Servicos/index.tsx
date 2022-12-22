@@ -12,17 +12,17 @@ export function Servicos() {
       <Container>
         <div className="servico">
           <img src={codeSvg} alt="Code" />
-          <h3>Criação de sites</h3>
+          <h3>Sites</h3>
           <div className="linha"></div>
         </div>
         <div className="servico">
           <img src={smartphoneSvg} alt="smartphone" />
-          <h3>Sites responsivos</h3>
+          <h3>Aplicativos</h3>
           <div className="linha"></div>
         </div>
         <div className="servico">
           <img src={codeSvg} alt="Code" />
-          <h3>Criação de APIs</h3>
+          <h3>APIs</h3>
           <div className="linha"></div>
         </div>
       </Container>

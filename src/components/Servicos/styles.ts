@@ -9,6 +9,7 @@ export const Titulo = styled.h2`
 `
 
 export const Container = styled.div`
+  position: relative;
   width: 90%;
   max-width: 1120px;
   margin: 0 auto;
@@ -19,15 +20,13 @@ export const Container = styled.div`
   gap: 2.75rem;
 
   .servico {
-    width: 21.875rem;
-    height: 15rem;
+    min-width: 21.875rem;
+    min-height: 15rem;
     background: var(--gray-400);
     padding: 1.25rem 1.5rem;
 
     h3 {
       margin-top: 3.375rem;
-      width: 7.875rem;
-      height: 5.25rem;
       font-weight: 500;
       font-size: 2rem;
       line-height: 2.625rem;
@@ -36,6 +35,8 @@ export const Container = styled.div`
   }
 
   .linha {
+    position: absolute;
+    bottom: 0;
     margin-top: 0.9rem;
     margin-left: -1.5rem;
     display: flex;

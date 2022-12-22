@@ -21,8 +21,8 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     padding: 1.25rem 1.5rem;
-    width: 21.875rem;
-    height: 15.625rem;
+    min-width: 21.875rem;
+    min-height: 15.625rem;
     border: 1px solid #333333;
     box-sizing: border-box;
     background: var(--gray-400);
