@@ -1,6 +1,6 @@
 # Portfólio responsivo feito em React
 
-## Acesse o deploy do portfólio: [Portfólio](https://gracious-leavitt-4f38ad.netlify.app/)
+## Acesse o deploy do portfólio: [Portfólio](https://portifolio-cyhwaz2vc-jvolima.vercel.app/)
 
 ## Tecnologias utilizadas
 - React
