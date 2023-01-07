@@ -1,8 +1,6 @@
 import imageSvg from "../../assets/image.svg"
 import { Container } from "./styles";
 
-const resume = "curriculo.pdf"
-
 interface Props {
   handleOpenContactModal: () => void;
 }
@@ -14,7 +12,7 @@ export function Presentation({ handleOpenContactModal }: Props) {
         <h1>Olá, eu sou o João Vitor Lima :)</h1>
         <p>Desenvolvedor Junior Full-Stack</p>
         <div className="buttons">
-          <a href={resume} download={resume} target="_blank" type="application/pdf">
+          <a href={"https://docs.google.com/document/d/e/2PACX-1vSBmA3RDj6JO0nYpODJ1-pjnKdWWqgLTxGGM8dEd-IcJagMDQoEL8YGdNrNGwXv9LTe72Qg8lnU4eR_/pub"} target="_blank" type="application/pdf">
             <button type="button">Download CV</button>
           </a>
           <button onClick={handleOpenContactModal} className="black_button" type="button">
