@@ -1,8 +1,8 @@
-import closeSvg from "../../assets/close.svg";
-import phoneSvg from "../../assets/phone.svg";
-import mailSvg from "../../assets/mail.svg";
-import linkedinSvg from "../../assets/linkedin.svg"
-import githubSvg from "../../assets/github.svg"
+import closeSvg from "../../../assets/close.svg";
+import phoneSvg from "../../../assets/phone.svg";
+import mailSvg from "../../../assets/mail.svg";
+import linkedinSvg from "../../../assets/linkedin.svg"
+import githubSvg from "../../../assets/github.svg"
 
 import Modal from "react-modal";
 import { Container } from "./styles";

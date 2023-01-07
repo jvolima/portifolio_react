@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Menu } from "../Menu";
+import { Menu } from "./Menu";
 import { Container } from "./styles";
 
 export function Header() {
@@ -29,10 +29,10 @@ export function Header() {
           }
         <nav>
           <ul>
-            <li><a href="./#sobreMim">Sobre mim</a></li>
-            <li><a href="./#projetos">Projetos</a></li>
-            <li><a href="./#servicos">Serviços</a></li>
-            <li><a href="./#minhasSkills">Minhas skills</a></li>
+            <li><a href="./#about">Sobre mim</a></li>
+            <li><a href="./#projects">Projetos</a></li>
+            <li><a href="./#services">Serviços</a></li>
+            <li><a href="./#skills">Minhas skills</a></li>
           </ul>
         </nav>
       </div>

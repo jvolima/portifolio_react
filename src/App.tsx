@@ -1,20 +1,19 @@
 import { useState } from "react"
-import { Apresentacao } from "./components/Apresentacao"
-import { ContactModal } from "./components/ContactModal"
-import { Contatos } from "./components/Contatos"
+import { Presentation } from "./components/Presentation"
 import { Header } from "./components/Header"
-import { Projetos } from "./components/Projetos"
-import { Rodape } from "./components/Rodape"
-import { Servicos } from "./components/Servicos"
+import { Projects } from "./components/Projects"
+import { Footer } from "./components/Footer"
+import { Services } from "./components/Services"
 import { Skills } from "./components/Skills"
-import { SobreMim } from "./components/SobreMim"
+import { About } from "./components/About"
 import { GlobalStyle } from "./styles/global"
+import { Contacts } from "./components/Contacts"
+import { ContactModal } from "./components/Presentation/ContactModal"
 
 function App() {
   const [isContactModalOpen, setIsContactModalOpen] = useState(false);
 
   function handleOpenContactModal() {
-    console.log("modal aberto")
     setIsContactModalOpen(true); 
   }
 
@@ -25,14 +24,14 @@ function App() {
   return (
     <>
       <Header />
-      <Apresentacao  handleOpenContactModal={handleOpenContactModal}/>
+      <Presentation  handleOpenContactModal={handleOpenContactModal}/>
       <ContactModal isOpen={isContactModalOpen} onRequestClose={handleCloseContactModal} />
-      <SobreMim />
-      <Contatos />
-      <Projetos />
-      <Servicos />
+      <About />
+      <Contacts />
+      <Projects />
+      <Services />
       <Skills />
-      <Rodape />
+      <Footer />
       <GlobalStyle />
     </>
   )

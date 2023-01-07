@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Titulo = styled.h2`
+export const Title = styled.h2`
   padding-top: 8rem;
   font-size: 2rem;
   line-height: 2.625rem;
@@ -8,7 +8,7 @@ export const Titulo = styled.h2`
   color: var(--white);
 `
 
-export const Container = styled.div`
+export const SkillsContainer = styled.div`
   width: 90%;
   max-width: 1120px;
   padding: 0 0.4rem;

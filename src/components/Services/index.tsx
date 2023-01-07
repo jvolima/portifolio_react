@@ -1,31 +1,31 @@
 import codeSvg from "../../assets/code.svg";
 import smartphoneSvg from "../../assets/smartphone.svg";
 
-import { Container, Titulo } from "./styles";
+import { ServicesContainer, Title } from "./styles";
 
-export function Servicos() {
+export function Services() {
   return (
     <>
-      <Titulo id="servicos">
+      <Title id="services">
         Serviços
-      </Titulo>
-      <Container>
-        <div className="servico">
+      </Title>
+      <ServicesContainer>
+        <div className="service">
           <img src={codeSvg} alt="Code" />
           <h3>Sites</h3>
-          <div className="linha"></div>
+          <div className="line"></div>
         </div>
-        <div className="servico">
+        <div className="service">
           <img src={smartphoneSvg} alt="smartphone" />
           <h3>Aplicativos</h3>
-          <div className="linha"></div>
+          <div className="line"></div>
         </div>
-        <div className="servico">
+        <div className="service">
           <img src={codeSvg} alt="Code" />
           <h3>APIs</h3>
-          <div className="linha"></div>
+          <div className="line"></div>
         </div>
-      </Container>
+      </ServicesContainer>
     </>
   )
 }

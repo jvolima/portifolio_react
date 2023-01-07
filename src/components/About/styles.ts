@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 
-export const Container = styled.div`
+export const AboutContainer = styled.div`
   width: 90%;
   max-width: 1120px;
   display: flex;
@@ -11,7 +11,7 @@ export const Container = styled.div`
   margin: 0 auto;
   
   h2 {
-    margin-top: 10.625rem;
+    margin-top: 7rem;
     color: var(--white);
     font-size: 2rem;
     line-height: 2.625rem;

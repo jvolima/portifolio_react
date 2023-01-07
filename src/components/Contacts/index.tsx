@@ -3,11 +3,11 @@ import mailSvg from "../../assets/mail.svg";
 import githubSvg from "../../assets/github.svg";
 import phoneSvg from "../../assets/phone.svg";
 
-import { Container } from "./styles";
+import { ContactsContainer } from "./styles";
 
-export function Contatos() {
+export function Contacts() {
   return (
-    <Container>
+    <ContactsContainer>
       <div className="imgAndDescription">
         <div className="elipse">
           <img src={smileSvg} alt="Smile" />
@@ -36,6 +36,6 @@ export function Contatos() {
         <h3>Telefone</h3>
         <p>(44) 99742-8611</p>
       </div>
-    </Container>
+    </ContactsContainer>
   )
 }

@@ -1,6 +1,5 @@
 import styled from "styled-components";
 
-
 export const Container = styled.div`
   margin: 0 auto;
   width: 90%;
@@ -49,7 +48,7 @@ export const Container = styled.div`
       }
     }
 
-    .botao_preto {
+    .black_button {
       margin-top: 2rem;
       border: 1px solid var(--gray-200);
       box-sizing: border-box;
@@ -68,7 +67,7 @@ export const Container = styled.div`
       }
     }
   }
-  .imagem {
+  .image {
     img {
       width: 300px;
       height: 255px;
@@ -79,13 +78,13 @@ export const Container = styled.div`
     flex-direction: column;
     text-align: center;
 
-    .imagem {
+    .image {
       order: -1
     }
   } 
 
   @media (max-width: 370px) {
-    .botoes {
+    .buttons {
       display: flex;
       align-items: center;
       justify-content: center;

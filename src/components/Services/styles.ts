@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Titulo = styled.h2`
+export const Title = styled.h2`
   padding-top: 8rem;
   font-size: 2rem;
   line-height: 2.625rem;
@@ -8,7 +8,7 @@ export const Titulo = styled.h2`
   color: var(--white);
 `
 
-export const Container = styled.div`
+export const ServicesContainer = styled.div`
   position: relative;
   width: 90%;
   max-width: 1120px;
@@ -19,7 +19,7 @@ export const Container = styled.div`
   grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
   gap: 2.75rem;
 
-  .servico {
+  .service {
     min-width: 21.875rem;
     min-height: 15rem;
     background: var(--gray-400);
@@ -34,7 +34,7 @@ export const Container = styled.div`
     }
   }
 
-  .linha {
+  .line {
     position: absolute;
     bottom: 0;
     margin-top: 0.9rem;

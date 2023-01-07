@@ -1,9 +1,9 @@
-import { Container } from "./styles";
+import { AboutContainer } from "./styles";
 
 
-export function SobreMim() {
+export function About() {
   return (
-    <Container id="sobreMim">
+    <AboutContainer id="about">
       <h2>Sobre mim</h2>
       <p>
         Meu nome é João Vitor de Oliveira Lima, tenho 18 anos e estudo programação há mais de 4 anos.
@@ -11,6 +11,6 @@ export function SobreMim() {
         Agora que terminei o ensino médio de técnico em informática pretendo fazer faculdade de Ciências da Computação
         e entrar no mercado de trabalho como dev. 
       </p>
-    </Container>
+    </AboutContainer>
   )
 }
