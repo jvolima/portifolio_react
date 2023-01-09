@@ -8,24 +8,12 @@ import { Skills } from "./components/Skills"
 import { About } from "./components/About"
 import { GlobalStyle } from "./styles/global"
 import { Contacts } from "./components/Contacts"
-import { ContactModal } from "./components/Presentation/ContactModal"
 
 function App() {
-  const [isContactModalOpen, setIsContactModalOpen] = useState(false);
-
-  function handleOpenContactModal() {
-    setIsContactModalOpen(true); 
-  }
-
-  function handleCloseContactModal() {
-    setIsContactModalOpen(false);
-  }
-
   return (
     <>
       <Header />
-      <Presentation  handleOpenContactModal={handleOpenContactModal}/>
-      <ContactModal isOpen={isContactModalOpen} onRequestClose={handleCloseContactModal} />
+      <Presentation/>
       <About />
       <Contacts />
       <Projects />

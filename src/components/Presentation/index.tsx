@@ -1,11 +1,19 @@
+import { useState } from "react";
 import imageSvg from "../../assets/image.svg"
+import { ContactModal } from "./ContactModal";
 import { Container } from "./styles";
 
-interface Props {
-  handleOpenContactModal: () => void;
-}
+export function Presentation() {
+  const [isContactModalOpen, setIsContactModalOpen] = useState(false);
 
-export function Presentation({ handleOpenContactModal }: Props) {
+  function handleOpenContactModal() {
+    setIsContactModalOpen(true)
+  }
+
+  function handleCloseContactModal() {
+    setIsContactModalOpen(false)
+  }
+
   return (
     <Container>
       <div className="infos">
@@ -23,6 +31,7 @@ export function Presentation({ handleOpenContactModal }: Props) {
       <div className="image">
         <img src={imageSvg} alt="Imagem" />
       </div>
+      <ContactModal isOpen={isContactModalOpen} onRequestClose={handleCloseContactModal} />
     </Container>
   )
 }
