@@ -19,6 +19,7 @@ export function ContactModal({ isOpen, onRequestClose }: ContactModalProps) {
       onRequestClose={onRequestClose}
       overlayClassName="react-modal-overlay"
       className="react-modal-content"
+      appElement={document.getElementById('root') as HTMLElement}
     >
       <button
         type="button"

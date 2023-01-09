@@ -46,6 +46,11 @@ export const GlobalStyle = createGlobalStyle`
     opacity: 0.6
   }
 
+  &:focus {
+    outline: 0;
+    box-shadow: 0 0 0 2px var(--green-light);
+  }
+
   .react-modal-overlay {
     background: rgba(0, 0, 0, 0.8);
 
@@ -54,7 +59,7 @@ export const GlobalStyle = createGlobalStyle`
     right: 0;
     left: 0;
     bottom: 0;
-    padding: 0 1rem;
+    padding: 0 1.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -63,6 +68,23 @@ export const GlobalStyle = createGlobalStyle`
   .react-modal-content {
     width: 100%;
     max-width: 500px;
+    background: var(--dark);
+    padding: 3rem;
+    position: relative;
+    border-radius: 0.25rem;
+
+    @media (max-width: 380px) {
+      padding: 2rem;
+    }
+
+    @media (max-width: 330px) {
+      padding: 1rem;
+    }
+  }
+
+  .react-modal-content-bigger {
+    width: 100%;
+    max-width: 800px;
     background: var(--dark);
     padding: 3rem;
     position: relative;
