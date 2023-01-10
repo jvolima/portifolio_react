@@ -1,7 +1,7 @@
-import closeSvg from '../../../assets/close.svg'
 import Modal from "react-modal";
 import { ProjectModalContainer } from './styles';
 import { Project } from '../Project';
+import { X } from 'phosphor-react';
 
 interface Props {
   project: Project
@@ -23,7 +23,7 @@ export function ProjectModal({ project, isOpen, onRequestClose }: Props) {
         onClick={onRequestClose}
         className="react-modal-close"
       >
-        <img src={closeSvg} alt="Fechar modal" />
+        <X color="#A8A8B3" size={24} />
       </button> 
 
       <ProjectModalContainer>
