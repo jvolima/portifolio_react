@@ -19,16 +19,4 @@ export const SkillsContainer = styled.div`
   justify-content: center;
   align-items: center;
   gap: 3rem;
-
-  .skill {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 9.375rem;
-    height: 9.375rem;
-    border: 1px solid var(--gray-200);
-    box-sizing: border-box;
-    background: var(--gray-400);
-  }
 `
