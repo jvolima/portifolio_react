@@ -5,7 +5,7 @@ export const Title = styled.h2`
   color: var(--white);
   font-size: 2rem;
   line-height: 2.625rem;
-  padding-top: 8rem;
+  padding-top: 6rem;
 `
 
 export const ProjectsContainer = styled.div`

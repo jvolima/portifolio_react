@@ -7,7 +7,6 @@ import { Services } from "./components/Services"
 import { Skills } from "./components/Skills"
 import { About } from "./components/About"
 import { GlobalStyle } from "./styles/global"
-import { Contacts } from "./components/Contacts"
 
 function App() {
   return (
@@ -15,7 +14,6 @@ function App() {
       <Header />
       <Presentation/>
       <About />
-      <Contacts />
       <Projects />
       <Services />
       <Skills />

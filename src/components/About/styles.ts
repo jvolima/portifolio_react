@@ -11,7 +11,7 @@ export const AboutContainer = styled.div`
   margin: 0 auto;
   
   h2 {
-    margin-top: 7rem;
+    margin-top: 6rem;
     color: var(--white);
     font-size: 2rem;
     line-height: 2.625rem;
