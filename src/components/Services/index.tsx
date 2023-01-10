@@ -1,3 +1,4 @@
+import { ComputerTower, Desktop, DeviceMobile } from "phosphor-react";
 import codeSvg from "../../assets/code.svg";
 import smartphoneSvg from "../../assets/smartphone.svg";
 
@@ -11,17 +12,17 @@ export function Services() {
       </Title>
       <ServicesContainer>
         <div className="service">
-          <img src={codeSvg} alt="Code" />
+          <Desktop color="#00DF5E" size={60} />
           <h3>Sites</h3>
           <div className="line"></div>
         </div>
         <div className="service">
-          <img src={smartphoneSvg} alt="smartphone" />
+          <DeviceMobile color="#00DF5E" size={60} />
           <h3>Aplicativos</h3>
           <div className="line"></div>
         </div>
         <div className="service">
-          <img src={codeSvg} alt="Code" />
+          <ComputerTower color="#00DF5E" size={60} />
           <h3>APIs</h3>
           <div className="line"></div>
         </div>
