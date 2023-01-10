@@ -14,14 +14,17 @@ export const SkillsContainer = styled.div`
   padding: 0 0.4rem;
   margin: 0 auto;
   margin-top: 2rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   gap: 3rem;
 
   .skill {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     width: 9.375rem;
     height: 9.375rem;
     border: 1px solid var(--gray-200);
