@@ -40,16 +40,12 @@ export function ContactModal({ isOpen, onRequestClose }: ContactModalProps) {
           <span>jvolima2004@gmail.com</span>
         </div>
         <div>
-          <a href="https://www.linkedin.com/in/jo%C3%A3o-vitor-de-oliveira-lima-36b573215" target="_blank">
-            <img src={linkedinSvg} alt="Linkedin" />
-          </a>
-          <span>João Vitor de Oliveira Lima</span>
+          <img src={linkedinSvg} alt="Linkedin" />
+          <span><a href="https://www.linkedin.com/in/jo%C3%A3o-vitor-de-oliveira-lima-36b573215" target="_blank">João Vitor de Oliveira Lima</a></span>
         </div>
         <div>
-          <a href="https://github.com/jvolima" target="_blank">
-            <img src={githubSvg}  width="32" height="32" alt="Github" />
-          </a>
-          <span>jvolima</span>
+          <img src={githubSvg} width="32" height="32" alt="Github" />
+          <span><a href="https://github.com/jvolima" target="_blank">jvolima</a></span>
         </div>
       </Container>
     </Modal>

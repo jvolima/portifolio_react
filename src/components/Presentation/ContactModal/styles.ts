@@ -19,6 +19,10 @@ export const Container = styled.div`
       margin-left: 1rem;
       color: var(--gray);
       font-size: 1.125rem;
+
+      a {
+        color: var(--gray);
+      }
     }
   }
 
