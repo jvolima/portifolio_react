@@ -1,18 +1,18 @@
-import { useState } from "react";
-import { ProjectModal } from "../ProjectModal";
-import { ProjectContainer } from "./styles";
+import { useState } from 'react'
+import { ProjectModal } from '../ProjectModal'
+import { ProjectContainer } from './styles'
 
-export type Project = {
-  title: string;
-  description: string;
-  techs: string[];
-  image: string;
-  github: string;
-  deploy?: string;
+export type ProjectType = {
+  title: string
+  description: string
+  techs: string[]
+  image: string
+  github: string
+  deploy?: string
 }
 
 interface Props {
-  project: Project
+  project: ProjectType
 }
 
 export function Project({ project }: Props) {
@@ -29,11 +29,15 @@ export function Project({ project }: Props) {
   return (
     <>
       <ProjectContainer onClick={handleOpenProjectModal}>
-        <img src={project.image} />
+        <img src={project.image} alt="" />
         <h3>{project.title}</h3>
         <p>{project.description}</p>
       </ProjectContainer>
-      <ProjectModal isOpen={isProjectModalOpen} onRequestClose={handleCloseProjectModal} project={project} />
+      <ProjectModal
+        isOpen={isProjectModalOpen}
+        onRequestClose={handleCloseProjectModal}
+        project={project}
+      />
     </>
   )
 }

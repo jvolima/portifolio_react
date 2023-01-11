@@ -1,17 +1,17 @@
-import { useState } from "react";
-import { Menu } from "./Menu";
-import { Container } from "./styles";
+import { useState } from 'react'
+import { Menu } from './Menu'
+import { Container } from './styles'
 
 export function Header() {
-  const [bars, setBars] = useState(false);
+  const [bars, setBars] = useState(false)
 
   function handleClickMenu() {
-    setBars(!bars);
+    setBars(!bars)
 
-    document.body.style.overflow = bars ? "initial" : "hidden"
+    document.body.style.overflow = bars ? 'initial' : 'hidden'
 
-    const menuSection = document.querySelector(".menu-section") as Element;
-    menuSection.classList.toggle("on", !bars);
+    const menuSection = document.querySelector('.menu-section') as Element
+    menuSection.classList.toggle('on', !bars)
   }
 
   return (
@@ -24,15 +24,21 @@ export function Header() {
           <div className="three"></div>
           <div className="four"></div>
         </div>
-          {
-            bars == true ? <Menu handleClickMenu={handleClickMenu}></Menu> : null 
-          }
+        {bars === true ? <Menu handleClickMenu={handleClickMenu}></Menu> : null}
         <nav>
           <ul>
-            <li><a href="./#about">Sobre mim</a></li>
-            <li><a href="./#projects">Projetos</a></li>
-            <li><a href="./#services">Serviços</a></li>
-            <li><a href="./#skills">Minhas skills</a></li>
+            <li>
+              <a href="./#about">Sobre mim</a>
+            </li>
+            <li>
+              <a href="./#projects">Projetos</a>
+            </li>
+            <li>
+              <a href="./#services">Serviços</a>
+            </li>
+            <li>
+              <a href="./#skills">Minhas skills</a>
+            </li>
           </ul>
         </nav>
       </div>

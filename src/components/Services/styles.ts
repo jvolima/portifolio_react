@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const Title = styled.h2`
   padding-top: 8rem;
@@ -44,13 +44,13 @@ export const ServicesContainer = styled.div`
     align-items: center;
     background: var(--green-light);
     width: 21.875rem;
-    height: 5px
+    height: 5px;
   }
 
   @media (max-width: 752px) {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column
+    flex-direction: column;
   }
 `

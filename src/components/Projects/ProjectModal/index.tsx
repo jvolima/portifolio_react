@@ -1,12 +1,12 @@
-import Modal from "react-modal";
-import { ProjectModalContainer } from './styles';
-import { Project } from '../Project';
-import { X } from 'phosphor-react';
+import Modal from 'react-modal'
+import { ProjectModalContainer } from './styles'
+import { ProjectType } from '../Project'
+import { X } from 'phosphor-react'
 
 interface Props {
-  project: Project
-  isOpen: boolean;
-  onRequestClose: () => void;
+  project: ProjectType
+  isOpen: boolean
+  onRequestClose: () => void
 }
 
 export function ProjectModal({ project, isOpen, onRequestClose }: Props) {
@@ -24,12 +24,12 @@ export function ProjectModal({ project, isOpen, onRequestClose }: Props) {
         className="react-modal-close"
       >
         <X color="#A8A8B3" size={24} />
-      </button> 
+      </button>
 
       <ProjectModalContainer>
         <div className="titleAndImage">
           <h1>{project.title}</h1>
-          <img src={project.image} />
+          <img src={project.image} alt="" />
         </div>
         <p>{project.description}</p>
 
@@ -38,8 +38,14 @@ export function ProjectModal({ project, isOpen, onRequestClose }: Props) {
 
         <h2>Links</h2>
         <div className="links">
-          <a href={project.github} target="_blank">Github</a>
-          {project.deploy && <a href={project.deploy} target="_blank">Deploy</a>}
+          <a href={project.github} target="_blank" rel="noreferrer">
+            Github
+          </a>
+          {project.deploy && (
+            <a href={project.deploy} target="_blank" rel="noreferrer">
+              Deploy
+            </a>
+          )}
         </div>
       </ProjectModalContainer>
     </Modal>

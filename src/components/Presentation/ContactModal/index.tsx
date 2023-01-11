@@ -1,12 +1,12 @@
-import githubSvg from "../../../assets/github.svg"
+import githubSvg from '../../../assets/github.svg'
 
-import Modal from "react-modal";
-import { Container } from "./styles";
-import { EnvelopeSimple, LinkedinLogo, Phone, X } from "phosphor-react";
+import Modal from 'react-modal'
+import { Container } from './styles'
+import { EnvelopeSimple, LinkedinLogo, Phone, X } from 'phosphor-react'
 
 interface ContactModalProps {
-  isOpen: boolean;
-  onRequestClose: () => void;
+  isOpen: boolean
+  onRequestClose: () => void
 }
 
 export function ContactModal({ isOpen, onRequestClose }: ContactModalProps) {
@@ -24,7 +24,7 @@ export function ContactModal({ isOpen, onRequestClose }: ContactModalProps) {
         className="react-modal-close"
       >
         <X color="#A8A8B3" size={24} />
-      </button> 
+      </button>
 
       <Container>
         <h2>Contatos</h2>
@@ -38,11 +38,27 @@ export function ContactModal({ isOpen, onRequestClose }: ContactModalProps) {
         </div>
         <div>
           <LinkedinLogo color="#00DF5E" size={32} />
-          <span><a href="https://www.linkedin.com/in/jo%C3%A3o-vitor-de-oliveira-lima-36b573215" target="_blank">João Vitor de Oliveira Lima</a></span>
+          <span>
+            <a
+              href="https://www.linkedin.com/in/jo%C3%A3o-vitor-de-oliveira-lima-36b573215"
+              target="_blank"
+              rel="noreferrer"
+            >
+              João Vitor de Oliveira Lima
+            </a>
+          </span>
         </div>
         <div>
           <img src={githubSvg} width="32" height="32" alt="Github" />
-          <span><a href="https://github.com/jvolima" target="_blank">jvolima</a></span>
+          <span>
+            <a
+              href="https://github.com/jvolima"
+              target="_blank"
+              rel="noreferrer"
+            >
+              jvolima
+            </a>
+          </span>
         </div>
       </Container>
     </Modal>

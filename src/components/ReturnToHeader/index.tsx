@@ -1,5 +1,5 @@
-import { ArrowUp } from "phosphor-react";
-import { ReturnToHeaderContainer } from "./styles";
+import { ArrowUp } from 'phosphor-react'
+import { ReturnToHeaderContainer } from './styles'
 
 export function ReturnToHeader() {
   return (

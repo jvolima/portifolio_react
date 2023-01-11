@@ -1,6 +1,13 @@
-import { ProjectsContainer, Title } from "./styles";
-import { Project } from "./Project";
-import { designSystem, devLandia, igniteShop, jvBox, lunaBus, rocketHelp } from "./projects";
+import { ProjectsContainer, Title } from './styles'
+import { Project } from './Project'
+import {
+  designSystem,
+  devLandia,
+  igniteShop,
+  jvBox,
+  lunaBus,
+  rocketHelp,
+} from './projects'
 
 export function Projects() {
   return (

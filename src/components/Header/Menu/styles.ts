@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const Container = styled.div`
   position: absolute;
@@ -55,7 +55,7 @@ export const Container = styled.div`
       }
 
       a:hover::after,
-      a:focus::after{
+      a:focus::after {
         transform: scale(1);
       }
     }

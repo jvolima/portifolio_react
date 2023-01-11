@@ -1,5 +1,4 @@
-import styled from "styled-components";
-
+import styled from 'styled-components'
 
 export const AboutContainer = styled.div`
   width: 90%;
@@ -9,7 +8,7 @@ export const AboutContainer = styled.div`
   align-items: center;
   flex-direction: column;
   margin: 0 auto;
-  
+
   h2 {
     margin-top: 6rem;
     color: var(--white);

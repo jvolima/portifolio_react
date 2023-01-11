@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const FooterContainer = styled.footer`
   width: 100%;
@@ -9,7 +9,7 @@ export const FooterContainer = styled.footer`
   background: var(--gray-400);
   margin-top: 11.5rem;
 
-  h3 { 
+  h3 {
     font-weight: normal;
     font-size: 1rem;
     line-height: 1.3rem;

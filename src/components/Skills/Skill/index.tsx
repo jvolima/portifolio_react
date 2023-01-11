@@ -1,6 +1,6 @@
-import { Star } from "phosphor-react";
-import { ReactNode, useState } from "react";
-import { InfosContainer, SkillContainer } from "./styles";
+import { Star } from 'phosphor-react'
+import { ReactNode, useState } from 'react'
+import { InfosContainer, SkillContainer } from './styles'
 
 interface Props {
   svg: any
@@ -14,18 +14,16 @@ export function Skill({ svg, tech, level }: Props) {
 
   return (
     <SkillContainer>
-      <div className="img">
-        {svg}
-      </div>
+      <div className="img">{svg}</div>
       <InfosContainer className="infos">
         <h2>{tech}</h2>
         <div className="stars">
           {Array.from(Array(starsColloredCount), (e, i) => (
-            <Star color="#00DF5E" weight="fill" />
+            <Star key={i} color="#00DF5E" weight="fill" />
           ))}
 
           {Array.from(Array(starsEmpty), (e, i) => (
-            <Star color="#FFFFFF" weight="fill" />
+            <Star key={i} color="#FFFFFF" weight="fill" />
           ))}
         </div>
       </InfosContainer>

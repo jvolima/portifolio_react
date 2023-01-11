@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const ProjectModalContainer = styled.div`
   .titleAndImage {
@@ -10,7 +10,7 @@ export const ProjectModalContainer = styled.div`
 
     h1 {
       font-size: 2.5rem;
-      color: var(--white)
+      color: var(--white);
     }
 
     img {
@@ -29,7 +29,7 @@ export const ProjectModalContainer = styled.div`
   h2 {
     margin-top: 1rem;
     font-size: 2rem;
-    color: var(--white)
+    color: var(--white);
   }
 
   .links {

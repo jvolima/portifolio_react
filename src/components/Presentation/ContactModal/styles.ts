@@ -1,7 +1,7 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const Container = styled.div`
-  h2 { 
+  h2 {
     color: var(--white);
     font-size: 2rem;
   }

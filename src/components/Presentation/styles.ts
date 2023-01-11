@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const Container = styled.div`
   margin: 0 auto;
@@ -79,9 +79,9 @@ export const Container = styled.div`
     text-align: center;
 
     .image {
-      order: -1
+      order: -1;
     }
-  } 
+  }
 
   @media (max-width: 370px) {
     .buttons {

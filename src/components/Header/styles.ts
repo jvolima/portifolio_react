@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const Container = styled.header`
   width: 90%;
@@ -13,7 +13,7 @@ export const Container = styled.header`
     line-height: 2.125rem;
     color: var(--white);
     margin-top: 2rem;
-  } 
+  }
 
   nav {
     ul {
@@ -59,7 +59,7 @@ export const Container = styled.header`
         }
 
         a:hover::after,
-        a:focus::after{
+        a:focus::after {
           transform: scale(1);
         }
       }
@@ -71,7 +71,10 @@ export const Container = styled.header`
       display: none;
     }
 
-    .one, .two, .three, .four {
+    .one,
+    .two,
+    .three,
+    .four {
       background: var(--white);
       height: 5px;
       width: 100%;
@@ -92,23 +95,23 @@ export const Container = styled.header`
     }
 
     .menu-section.on {
-      .menu-toggle {   
-          .one {
-            transform: rotate(45deg) translate(7px, 7px);
-          }
+      .menu-toggle {
+        .one {
+          transform: rotate(45deg) translate(7px, 7px);
+        }
 
-          .two {
-            opacity: 0;
-          }
+        .two {
+          opacity: 0;
+        }
 
-          .three {
-            transform: rotate(-45deg) translate(8px, -9px);
-          }
+        .three {
+          transform: rotate(-45deg) translate(8px, -9px);
+        }
 
-          .four {
-            opacity: 0;
-          }
+        .four {
+          opacity: 0;
+        }
       }
     }
-  } 
+  }
 `
