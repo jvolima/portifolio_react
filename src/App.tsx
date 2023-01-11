@@ -7,6 +7,7 @@ import { Services } from "./components/Services"
 import { Skills } from "./components/Skills"
 import { About } from "./components/About"
 import { GlobalStyle } from "./styles/global"
+import { ReturnToHeader } from "./components/ReturnToHeader"
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Services />
       <Skills />
       <Footer />
+      <ReturnToHeader />
       <GlobalStyle />
     </>
   )
