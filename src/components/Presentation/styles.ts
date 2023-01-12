@@ -1,6 +1,7 @@
+import { motion } from 'framer-motion'
 import styled from 'styled-components'
 
-export const Container = styled.div`
+export const PresentationContainer = styled(motion.div)`
   margin: 0 auto;
   width: 90%;
   max-width: 1120px;

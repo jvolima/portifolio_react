@@ -1,10 +1,20 @@
-import { useState } from 'react'
+import { useAnimation } from 'framer-motion'
+import { useEffect, useState } from 'react'
+import { useInView } from 'react-intersection-observer'
 import imageSvg from '../../assets/image.svg'
 import { ContactModal } from './ContactModal'
-import { Container } from './styles'
+import { PresentationContainer } from './styles'
 
 export function Presentation() {
   const [isContactModalOpen, setIsContactModalOpen] = useState(false)
+
+  const controls = useAnimation()
+  const [ref, inView] = useInView()
+
+  const containerVariants = {
+    visible: { opacity: 1, y: 0, transition: { duration: 1 } },
+    hidden: { opacity: 0, y: -200 },
+  }
 
   function handleOpenContactModal() {
     setIsContactModalOpen(true)
@@ -14,8 +24,19 @@ export function Presentation() {
     setIsContactModalOpen(false)
   }
 
+  useEffect(() => {
+    if (inView) {
+      controls.start('visible')
+    }
+  }, [controls, inView])
+
   return (
-    <Container>
+    <PresentationContainer
+      ref={ref}
+      initial="hidden"
+      animate={controls}
+      variants={containerVariants}
+    >
       <div className="infos">
         <h1>Olá, eu sou o João Vitor Lima :)</h1>
         <p>Desenvolvedor Frontend Junior</p>
@@ -46,6 +67,6 @@ export function Presentation() {
         isOpen={isContactModalOpen}
         onRequestClose={handleCloseContactModal}
       />
-    </Container>
+    </PresentationContainer>
   )
 }

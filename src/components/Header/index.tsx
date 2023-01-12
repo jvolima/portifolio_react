@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Menu } from './Menu'
-import { Container } from './styles'
+import { HeaderContainer } from './styles'
 
 export function Header() {
   const [bars, setBars] = useState(false)
@@ -15,7 +15,7 @@ export function Header() {
   }
 
   return (
-    <Container id="header">
+    <HeaderContainer id="header">
       <h1>Portfólio</h1>
       <div className="menu-section">
         <div className="menu-toggle" onClick={handleClickMenu}>
@@ -42,6 +42,6 @@ export function Header() {
           </ul>
         </nav>
       </div>
-    </Container>
+    </HeaderContainer>
   )
 }
