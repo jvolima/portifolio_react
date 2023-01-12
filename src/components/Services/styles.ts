@@ -1,14 +1,18 @@
+import { motion } from 'framer-motion'
 import styled from 'styled-components'
 
+export const ServicesContainer = styled(motion.div)`
+  padding-top: 6rem;
+`
+
 export const Title = styled.h2`
-  padding-top: 8rem;
   font-size: 2rem;
   line-height: 2.625rem;
   text-align: center;
   color: var(--white);
 `
 
-export const ServicesContainer = styled.div`
+export const ServicesList = styled.div`
   position: relative;
   width: 90%;
   max-width: 1120px;

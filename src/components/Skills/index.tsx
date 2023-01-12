@@ -1,11 +1,34 @@
+import { useAnimation } from 'framer-motion'
+import { useEffect } from 'react'
+import { useInView } from 'react-intersection-observer'
 import { Skill } from './Skill'
-import { SkillsContainer, Title } from './styles'
+import { SkillsContainer, SkillsList, Title } from './styles'
 
 export function Skills() {
+  const controls = useAnimation()
+  const [ref, inView] = useInView()
+
+  const containerVariants = {
+    visible: { opacity: 1, y: 0, transition: { duration: 1 } },
+    hidden: { opacity: 0, y: -200 },
+  }
+
+  useEffect(() => {
+    if (inView) {
+      controls.start('visible')
+    }
+  }, [controls, inView])
+
   return (
-    <>
-      <Title id="skills">Minhas skills</Title>
-      <SkillsContainer>
+    <SkillsContainer
+      id="skills"
+      ref={ref}
+      initial="hidden"
+      animate={controls}
+      variants={containerVariants}
+    >
+      <Title>Minhas skills</Title>
+      <SkillsList>
         <Skill
           svg={
             <svg width="80" height="80" viewBox="0 0 128 128">
@@ -256,7 +279,7 @@ export function Skills() {
           tech="Jest"
           level={4}
         />
-      </SkillsContainer>
-    </>
+      </SkillsList>
+    </SkillsContainer>
   )
 }
