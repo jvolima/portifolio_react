@@ -1,6 +1,7 @@
+import { motion } from 'framer-motion'
 import styled from 'styled-components'
 
-export const AboutContainer = styled.div`
+export const AboutContainer = styled(motion.div)`
   width: 90%;
   max-width: 1120px;
   display: flex;
