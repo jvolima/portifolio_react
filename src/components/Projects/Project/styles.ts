@@ -5,8 +5,7 @@ export const ProjectContainer = styled.div`
   display: flex;
   flex-direction: column;
   padding: 1.25rem 1.5rem;
-  min-width: 21.875rem;
-  min-height: 15.625rem;
+  max-width: 21.875rem;
   border: 1px solid #333333;
   box-sizing: border-box;
   background: var(--gray-400);

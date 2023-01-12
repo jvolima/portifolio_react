@@ -16,7 +16,7 @@ const devLandia = {
 const lunaBus = {
   title: 'Luna Bus',
   description:
-    'Site para o transporte público de cidades de pequeno e médio porte.',
+    'Site para o transporte público voltado para cidades de pequeno e médio porte.',
   techs: ['React', 'Next', 'TypeScript', 'Tailwind CSS'],
   image: lunabusPng,
   github: 'https://github.com/jvolima/lunabus',
@@ -51,7 +51,7 @@ const rocketHelp = {
 const jvBox = {
   title: 'JvBox',
   description:
-    'Site parecido com o Dropbox, onde você pode se cadastrar e salvar suas imagens e gifs favoritos.',
+    'Site parecido com o Dropbox, onde você pode salvar suas imagens e gifs favoritos.',
   techs: ['Java', 'Ajax', 'JavaScript'],
   image: jvboxPng,
   github: 'https://github.com/jvolima/JvBox',
