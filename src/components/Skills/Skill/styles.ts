@@ -5,8 +5,8 @@ export const SkillContainer = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 11rem;
-  height: 11rem;
+  width: 9.5rem;
+  height: 9.5rem;
   border: 1px solid var(--gray-200);
   box-sizing: border-box;
   background: var(--gray-400);
@@ -20,8 +20,8 @@ export const SkillContainer = styled.div`
 
   .img {
     svg {
-      width: 90px;
-      height: 90px;
+      width: 80px;
+      height: 80px;
     }
   }
 `

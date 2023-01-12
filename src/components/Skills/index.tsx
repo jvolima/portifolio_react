@@ -2,7 +2,7 @@ import { useAnimation } from 'framer-motion'
 import { useEffect } from 'react'
 import { useInView } from 'react-intersection-observer'
 import { Skill } from './Skill'
-import { SkillsContainer, SkillsList, Title } from './styles'
+import { Description, SkillsContainer, SkillsList, Title } from './styles'
 
 export function Skills() {
   const controls = useAnimation()
@@ -28,6 +28,9 @@ export function Skills() {
       variants={containerVariants}
     >
       <Title>Minhas skills</Title>
+      <Description>
+        Passe o mouse ou clique na skill para ver mais informações
+      </Description>
       <SkillsList>
         <Skill
           svg={
@@ -84,7 +87,7 @@ export function Skills() {
             </svg>
           }
           tech="CSS 3"
-          level={5}
+          level={4}
         />
 
         <Skill
@@ -152,7 +155,7 @@ export function Skills() {
             </svg>
           }
           tech="Next"
-          level={5}
+          level={4}
         />
 
         <Skill

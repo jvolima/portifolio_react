@@ -12,6 +12,12 @@ export const Title = styled.h2`
   color: var(--white);
 `
 
+export const Description = styled.p`
+  font-size: 1.125rem;
+  text-align: center;
+  color: var(--gray);
+`
+
 export const SkillsList = styled.div`
   width: 90%;
   max-width: 1120px;
