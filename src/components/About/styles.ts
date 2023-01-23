@@ -12,7 +12,7 @@ export const AboutContainer = styled(motion.div)`
 
   h2 {
     margin-top: 6rem;
-    color: var(--white);
+    color: var(--title);
     font-size: 2rem;
     line-height: 2.625rem;
     text-align: center;
@@ -23,7 +23,7 @@ export const AboutContainer = styled(motion.div)`
     margin-top: 2rem;
     font-size: 1.125rem;
     line-height: 2rem;
-    color: var(--gray);
+    color: var(--text);
     text-align: center;
   }
 `

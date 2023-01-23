@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
   h2 {
-    color: var(--white);
+    color: var(--title);
     font-size: 2rem;
   }
 
@@ -13,15 +13,15 @@ export const Container = styled.div`
     margin-top: 2rem;
     display: flex;
     align-items: center;
-    background: var(--gray-400);
+    background: var(--secondary);
 
     span {
       margin-left: 1rem;
-      color: var(--gray);
+      color: var(--text);
       font-size: 1.125rem;
 
       a {
-        color: var(--gray);
+        color: var(--text);
       }
     }
   }

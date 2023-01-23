@@ -11,8 +11,23 @@ export const HeaderContainer = styled.header`
   h1 {
     font-size: 1.75rem;
     line-height: 2.125rem;
-    color: var(--white);
+    color: var(--title);
     margin-top: 2rem;
+  }
+
+  .menu-section {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+
+    button {
+      background: transparent;
+      border: 0;
+
+      svg {
+        color: var(--primary);
+      }
+    }
   }
 
   nav {
@@ -24,11 +39,10 @@ export const HeaderContainer = styled.header`
         font-size: 1.125rem;
         line-height: 1.4375rem;
         margin-right: 3rem;
-        margin-top: 2rem;
 
         a {
           text-decoration: none;
-          color: var(--white);
+          color: var(--title);
           display: block;
           position: relative;
           padding: 0.2em 0;
@@ -41,7 +55,7 @@ export const HeaderContainer = styled.header`
           left: 0;
           width: 100%;
           height: 0.1em;
-          background: var(--green-light);
+          background: var(--primary);
           opacity: 0;
           transition: opacity 300ms, transform 300ms;
         }
@@ -66,7 +80,7 @@ export const HeaderContainer = styled.header`
     }
   }
 
-  @media (max-width: 670px) {
+  @media (max-width: 700px) {
     nav {
       display: none;
     }
@@ -75,7 +89,7 @@ export const HeaderContainer = styled.header`
     .two,
     .three,
     .four {
-      background: var(--white);
+      background: var(--title);
       height: 5px;
       width: 100%;
       margin: 6px auto;
@@ -83,15 +97,14 @@ export const HeaderContainer = styled.header`
       transition-duration: 0.3s;
     }
 
+    .one {
+      margin-top: 0;
+    }
+
     .menu-toggle {
+      margin-left: 1.5rem;
       z-index: 10000;
       width: 40px;
-      height: 30px;
-      margin-right: 20px;
-      margin-top: 20px;
-      position: absolute;
-      right: 12px;
-      top: 2px;
     }
 
     .menu-section.on {

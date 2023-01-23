@@ -2,12 +2,12 @@ import { createGlobalStyle } from 'styled-components'
 
 export const GlobalStyle = createGlobalStyle`
   :root {
-    --white: #f9f9f9;
-    --gray-200: #333333;
-    --dark: #171717;
-    --gray: #828282;
-    --gray-400: #212121;
-    --green-light: #00DF5E;
+    --primary: ${(props) => props.theme.colors.primary};
+    --secondary: ${(props) => props.theme.colors.secondary};
+    --title: ${(props) => props.theme.colors.title};
+    --border: ${(props) => props.theme.colors.border};
+    --background: ${(props) => props.theme.colors.background};
+    --text: ${(props) => props.theme.colors.text};
   }
 
   * {
@@ -27,7 +27,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    background: var(--dark);
+    background: var(--background);
     -webkit-font-smoothing: antialiased;
   }
 
@@ -47,7 +47,7 @@ export const GlobalStyle = createGlobalStyle`
 
   &:focus {
     outline: 0;
-    box-shadow: 0 0 0 2px var(--green-light);
+    box-shadow: 0 0 0 2px var(--primary);
   }
 
   .react-modal-overlay {
@@ -67,7 +67,7 @@ export const GlobalStyle = createGlobalStyle`
   .react-modal-content {
     width: 100%;
     max-width: 500px;
-    background: var(--dark);
+    background: var(--background);
     padding: 3rem;
     position: relative;
     border-radius: 0.25rem;
@@ -84,7 +84,7 @@ export const GlobalStyle = createGlobalStyle`
   .react-modal-content-bigger {
     width: 100%;
     max-width: 800px;
-    background: var(--dark);
+    background: var(--background);
     padding: 3rem;
     position: relative;
     border-radius: 0.25rem;

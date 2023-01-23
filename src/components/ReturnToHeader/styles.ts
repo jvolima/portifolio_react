@@ -12,7 +12,7 @@ export const ReturnToHeaderContainer = styled.a`
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--green-light);
+  background-color: var(--primary);
   border-radius: 10000px;
 
   &:hover {

@@ -4,7 +4,7 @@ export const Container = styled.div`
   position: absolute;
   top: 0;
   left: 0;
-  background: var(--green-light);
+  background: var(--primary);
   width: 100vw;
   height: 100vh;
   z-index: 10;
@@ -21,7 +21,7 @@ export const Container = styled.div`
     li {
       a {
         text-decoration: none;
-        color: var(--white);
+        color: var(--title);
         transition-duration: 0.5s;
         font-size: 2rem;
         line-height: 4rem;
@@ -37,7 +37,7 @@ export const Container = styled.div`
         left: 0;
         width: 100%;
         height: 0.1em;
-        background: var(--white);
+        background: var(--title);
         opacity: 0;
         transition: opacity 300ms, transform 300ms;
       }

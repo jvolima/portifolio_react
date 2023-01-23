@@ -7,7 +7,7 @@ export const ProjectsContainer = styled(motion.div)`
 
 export const Title = styled.h2`
   text-align: center;
-  color: var(--white);
+  color: var(--title);
   font-size: 2rem;
   line-height: 2.625rem;
 `

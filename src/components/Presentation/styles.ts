@@ -17,7 +17,7 @@ export const PresentationContainer = styled(motion.div)`
       max-width: 270px;
       font-size: 2rem;
       line-height: 3rem;
-      color: var(--white);
+      color: var(--title);
     }
 
     p {
@@ -25,16 +25,16 @@ export const PresentationContainer = styled(motion.div)`
       font-weight: 500;
       font-size: 1.125rem;
       line-height: 1.5rem;
-      color: var(--gray);
+      color: var(--text);
     }
 
     a {
       button {
         margin-top: 2rem;
-        border: 1px solid var(--gray-200);
+        border: 1px solid var(--border);
         box-sizing: border-box;
-        background: var(--green-light);
-        color: (--dark);
+        background: var(--primary);
+        color: (--background);
         width: 143px;
         height: 42px;
         margin-right: 1rem;
@@ -51,12 +51,12 @@ export const PresentationContainer = styled(motion.div)`
 
     .black_button {
       margin-top: 2rem;
-      border: 1px solid var(--gray-200);
+      border: 1px solid var(--border);
       box-sizing: border-box;
-      background: var(--dark);
+      background: var(--background);
       width: 157px;
       margin-right: 0;
-      color: var(--white);
+      color: var(--title);
       height: 42px;
       font-weight: 500;
       font-size: 0.875rem;

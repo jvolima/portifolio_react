@@ -10,7 +10,7 @@ export const ProjectModalContainer = styled.div`
 
     h1 {
       font-size: 2.5rem;
-      color: var(--white);
+      color: var(--title);
     }
 
     img {
@@ -23,13 +23,13 @@ export const ProjectModalContainer = styled.div`
 
   p {
     font-size: 1.25rem;
-    color: var(--gray);
+    color: var(--text);
   }
 
   h2 {
     margin-top: 1rem;
     font-size: 2rem;
-    color: var(--white);
+    color: var(--title);
   }
 
   .links {
@@ -38,7 +38,7 @@ export const ProjectModalContainer = styled.div`
 
     a {
       font-size: 1.25rem;
-      color: var(--gray);
+      color: var(--text);
     }
   }
 `

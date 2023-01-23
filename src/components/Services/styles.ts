@@ -9,7 +9,7 @@ export const Title = styled.h2`
   font-size: 2rem;
   line-height: 2.625rem;
   text-align: center;
-  color: var(--white);
+  color: var(--title);
 `
 
 export const ServicesList = styled.div`
@@ -26,7 +26,7 @@ export const ServicesList = styled.div`
   .service {
     min-width: 21.875rem;
     min-height: 15rem;
-    background: var(--gray-400);
+    background: var(--secondary);
     padding: 1.25rem 1.5rem;
 
     h3 {
@@ -34,7 +34,7 @@ export const ServicesList = styled.div`
       font-weight: 500;
       font-size: 2rem;
       line-height: 2.625rem;
-      color: var(--gray);
+      color: var(--text);
     }
   }
 
@@ -46,7 +46,7 @@ export const ServicesList = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    background: var(--green-light);
+    background: var(--primary);
     width: 21.875rem;
     height: 5px;
   }

@@ -6,17 +6,17 @@ export const FooterContainer = styled.footer`
   display: flex;
   justify-content: center;
   align-items: center;
-  background: var(--gray-400);
+  background: var(--secondary);
   margin-top: 11.5rem;
 
   h3 {
     font-weight: normal;
     font-size: 1rem;
     line-height: 1.3rem;
-    color: var(--white);
+    color: var(--title);
 
     span {
-      color: var(--green-light);
+      color: var(--primary);
     }
   }
 `

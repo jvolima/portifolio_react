@@ -19,11 +19,11 @@ export function Skill({ svg, tech, level }: Props) {
         <h2>{tech}</h2>
         <div className="stars">
           {Array.from(Array(starsColloredCount), (e, i) => (
-            <Star key={i} color="#00DF5E" weight="fill" />
+            <Star className="fill" key={i} weight="fill" />
           ))}
 
           {Array.from(Array(starsEmpty), (e, i) => (
-            <Star key={i} color="#FFFFFF" weight="fill" />
+            <Star className="empty" key={i} weight="fill" />
           ))}
         </div>
       </InfosContainer>

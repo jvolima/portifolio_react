@@ -6,13 +6,13 @@ export const ProjectContainer = styled.div`
   flex-direction: column;
   padding: 1.25rem 1.5rem;
   max-width: 21.875rem;
-  border: 1px solid #333333;
+  border: 1px solid var(--border);
   box-sizing: border-box;
-  background: var(--gray-400);
+  background: var(--secondary);
 
   &:hover {
     transition: border 0.2s;
-    border: 1px solid var(--green-light);
+    border: 1px solid var(--primary);
   }
 
   img {
@@ -25,13 +25,13 @@ export const ProjectContainer = styled.div`
     font-weight: 500;
     font-size: 1.125rem;
     line-height: 1.5rem;
-    color: #fff;
+    color: var(--title);
   }
 
   p {
     margin-top: 0.2rem;
     font-size: 0.875rem;
     line-height: 1.125rem;
-    color: var(--gray);
+    color: var(--text);
   }
 `

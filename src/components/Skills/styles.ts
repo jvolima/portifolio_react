@@ -9,13 +9,13 @@ export const Title = styled.h2`
   font-size: 2rem;
   line-height: 2.625rem;
   text-align: center;
-  color: var(--white);
+  color: var(--title);
 `
 
 export const Description = styled.p`
   font-size: 1.125rem;
   text-align: center;
-  color: var(--gray);
+  color: var(--text);
 `
 
 export const SkillsList = styled.div`

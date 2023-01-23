@@ -1,8 +1,14 @@
+import { Moon, SunDim } from 'phosphor-react'
 import { useState } from 'react'
 import { Menu } from './Menu'
 import { HeaderContainer } from './styles'
 
-export function Header() {
+interface Props {
+  handleSwitchTheme: () => void
+  theme: string
+}
+
+export function Header({ handleSwitchTheme, theme }: Props) {
   const [bars, setBars] = useState(false)
 
   function handleClickMenu() {
@@ -18,12 +24,6 @@ export function Header() {
     <HeaderContainer id="header">
       <h1>Portfólio</h1>
       <div className="menu-section">
-        <div className="menu-toggle" onClick={handleClickMenu}>
-          <div className="one"></div>
-          <div className="two"></div>
-          <div className="three"></div>
-          <div className="four"></div>
-        </div>
         {bars === true ? <Menu handleClickMenu={handleClickMenu}></Menu> : null}
         <nav>
           <ul>
@@ -41,6 +41,15 @@ export function Header() {
             </li>
           </ul>
         </nav>
+        <button onClick={handleSwitchTheme}>
+          {theme === 'light' ? <Moon size={32} /> : <SunDim size={32} />}
+        </button>
+        <div className="menu-toggle" onClick={handleClickMenu}>
+          <div className="one"></div>
+          <div className="two"></div>
+          <div className="three"></div>
+          <div className="four"></div>
+        </div>
       </div>
     </HeaderContainer>
   )

@@ -7,9 +7,9 @@ export const SkillContainer = styled.div`
   flex-direction: column;
   width: 9.5rem;
   height: 9.5rem;
-  border: 1px solid var(--gray-200);
+  border: 1px solid var(--border);
   box-sizing: border-box;
-  background: var(--gray-400);
+  background: var(--secondary);
   position: relative;
 
   &:hover {
@@ -33,17 +33,25 @@ export const InfosContainer = styled.div`
   position: absolute;
   z-index: 1000;
   bottom: 0;
-  background: var(--dark);
+  background: var(--background);
   padding: 1rem;
 
   h2 {
     font-size: 1.25rem;
-    color: var(--gray);
+    color: var(--text);
   }
 
   .stars {
     display: flex;
     align-items: center;
     gap: 0.25rem;
+
+    .fill {
+      color: ${(props) => props.theme.colors.primary};
+    }
+
+    .empty {
+      color: ${(props) => props.theme.colors.title};
+    }
   }
 `
