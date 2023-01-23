@@ -27,6 +27,10 @@ export const HeaderContainer = styled.header`
       svg {
         color: var(--primary);
       }
+
+      &:focus {
+        box-shadow: 0 0px;
+      }
     }
   }
 
