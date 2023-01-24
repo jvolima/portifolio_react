@@ -17,8 +17,9 @@ export const ProjectsList = styled.div`
   max-width: 1120px;
   margin: 0 auto;
   margin-top: 2rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 2.75rem;
 
   @media (max-width: 680px) {

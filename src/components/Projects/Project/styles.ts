@@ -5,7 +5,7 @@ export const ProjectContainer = styled.div`
   display: flex;
   flex-direction: column;
   padding: 1.25rem 1.5rem;
-  max-width: 21.875rem;
+  max-width: 20rem;
   border: 1px solid var(--border);
   box-sizing: border-box;
   background: var(--secondary);
@@ -16,8 +16,9 @@ export const ProjectContainer = styled.div`
   }
 
   img {
-    width: 18.75rem;
-    height: 9.375rem;
+    max-width: 18.5rem;
+    width: 100%;
+    object-fit: cover;
   }
 
   h3 {
