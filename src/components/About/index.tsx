@@ -28,12 +28,11 @@ export function About() {
     >
       <h2>Sobre mim</h2>
       <p>
-        Meu nome é João Vitor de Oliveira Lima, tenho 18 anos e estudo
-        programação há mais de 4 anos. Atualmente estou focado em aprender cada
-        vez mais sobre Node e React utilizando Typescript. Agora que terminei o
-        ensino médio integrado ao curso de técnico em informática pretendo fazer
-        faculdade de Ciências da Computação e entrar no mercado de trabalho como
-        dev.
+        Meu nome é João Vitor de Oliveira Lima, e tenho 18 anos. Estudo programação desde 2019, ano em
+        que ingressei no curso de técnico em informática integrado ao ensino médio no IFPR. Concluí esse
+        curso em 2022 e atualmente estou cursando Bacharelado em Ciência da Computação na UFSCar (turma 023).
+        Meu objetivo na programação é continuar aprendendo e me aprimorando nas tecnologias mais recentes para
+        me tornar um desenvolvedor de software de destaque no mercado.
       </p>
     </AboutContainer>
   )
